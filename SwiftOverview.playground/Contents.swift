@@ -137,4 +137,100 @@ if enteredDoorCode && passedRetinaScan || hasDoorKey || knowsOverridePassword {
 }
 
 // MARK: - Strings and Characters
+var thisIsAStringLiteral = "Hello world!"
+let multipleLines = """
+Hello this is a multiple line string.
+You can write out what you like.
+"""
+let unicodeScalarString = "\u{24}"
+var emptyString = ""
+var anotherEmptyString = String()
+
+// MARK: - Collection Types
+// Arrays
+var classicArray = ["Pie", "Cookies", "Pizza", "Ham", "Cheese", "Berries"]
+var emptyArray = [Int]()
+var arrayLiteral: [String] = ["Hi", "Hello"]
+
+// Accessing an array
+print(classicArray.count)
+
+if !classicArray.isEmpty {
+    print("There is food here.")
+}
+
+classicArray.append("Spinach")
+classicArray += ["Tomato"]
+
+var firstItem = classicArray[0]
+classicArray[0] = "Oranges"
+classicArray.insert("Bread", at: 2)
+classicArray.remove(at: 1)
+
+// Iterate over an array
+for i in classicArray {
+    print(i)
+}
+
+// Sets
+var numbers: Set<Int> = [22,13,2,23,45]
+var newNumbers: Set = [1,24,99,23,11,111,29,6,7,3]
+numbers.insert(6)
+numbers.remove(2)
+newNumbers.sorted()
+
+// Dictionaries
+var cats = ["Buffy":1, "Rogue": 3, "Onyx":1, "Orion":4]
+cats["Xander"] = 8
+let ids: [Int:Int] = [1:987, 2:788, 3:239, 4:392]
+var emptyDictionary: [String:Int] = [:]
+
+for (name, age) in cats {
+    print("Cat's name is \(name) and age \(age)")
+}
+
+// MARK: - Control Flow
+
+// For In Loops
+let names = ["Princess Bubblegum", "Finn", "Marceline", "Jake"]
+for name in names {
+    print("Hello, \(name)!")
+}
+// MARK: - Functions
+
+// MARK: - Closures
+
+// MARK: - Enumerations
+
+// MARK: - Structs & Classes
+
+// MARK: - Properties
+
+// MARK: - Methods
+
+// MARK: - Subscripts
+
+// MARK: - Inheritance
+
+// MARK: - Initialization
+
+// MARK: - Deinitialization
+
+// MARK: - Optional Chaining
+
+// MARK: - Type Casting
+
+// MARK: - Nested Types
+
+// MARK: - Extensions
+
+// MARK: - Protocols
+
+// MARK: - Generics
+
+// MARK: - Opaque Types
+
+// MARK: - Automatic Reference Counting
+
+// MARK: - Memory Safety
 
